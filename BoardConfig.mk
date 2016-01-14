@@ -22,6 +22,9 @@ LOCAL_PATH := device/motorola/condor
 # Kernel
 TARGET_KERNEL_CONFIG := cm_condor_defconfig
 TARGET_KERNEL_SOURCE := kernel/motorola/msm8610
+BOARD_CUSTOM_BOOTIMG_MK := device/motorola/condor/mkbootimg.mk
+
+BOARD_KERNEL_CMDLINE := androidboot.selinux=permissive
 
 # Storage & partiiton
 BOARD_BOOTIMAGE_PARTITION_SIZE := 10444800
@@ -33,6 +36,10 @@ BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/ramdisk/fstab.qcom
+
+# Bootanimation
+TARGET_SCREEN_HEIGHT := 960
+TARGET_SCREEN_WIDTH := 540
 
 # Asserts
 TARGET_OTA_ASSERT_DEVICE := xt1021,xt1022,xt1023,condor_umts,condor_umtsds,condor
