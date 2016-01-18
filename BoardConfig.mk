@@ -32,10 +32,7 @@ KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
 # Rom Toolchain
 TARGET_GCC_VERSION_EXP := 5.2
 
-# Optimizations
-CLANG_O3 := true
-STRICT_ALIASING := false
-KRAIT_TUNINGS := false
+# Optimization
 GRAPHITE_OPTS := true
 ENABLE_GCCONLY := true
 
