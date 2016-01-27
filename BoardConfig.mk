@@ -25,11 +25,18 @@ TARGET_KERNEL_SOURCE := kernel/motorola/msm8610
 BOARD_CUSTOM_BOOTIMG_MK := device/motorola/condor/mkbootimg.mk
 
 #Kernel Toolchain
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-5.3/bin
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.9/bin
 KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
 
 # Rom Toolchain
-TARGET_GCC_VERSION_EXP := 5.3
+TARGET_GCC_VERSION_EXP := 4.9
+
+# Optimizations
+CLANG_O3 := true
+STRICT_ALIASING := true
+KRAIT_TUNINGS := true
+GRAPHITE_OPTS := true
+ENABLE_GCCONLY := true
 
 # Storage & partiiton
 BOARD_BOOTIMAGE_PARTITION_SIZE := 10444800
