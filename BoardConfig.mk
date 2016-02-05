@@ -20,7 +20,7 @@
 LOCAL_PATH := device/motorola/condor
 
 # Kernel
-TARGET_KERNEL_CONFIG := cm_condor_defconfig
+TARGET_KERNEL_CONFIG := sshd_condor_defconfig
 TARGET_KERNEL_SOURCE := kernel/motorola/msm8610
 BOARD_CUSTOM_BOOTIMG_MK := device/motorola/condor/mkbootimg.mk
 
