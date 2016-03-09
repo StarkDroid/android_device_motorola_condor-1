@@ -38,6 +38,7 @@ STRICT_ALIASING := false
 KRAIT_TUNINGS := true
 GRAPHITE_OPTS := false
 ENABLE_GCCONLY := false
+USE_PIPE := true
 
 # Storage & partiiton
 BOARD_BOOTIMAGE_PARTITION_SIZE := 10444800
