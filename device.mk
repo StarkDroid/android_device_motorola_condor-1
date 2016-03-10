@@ -36,6 +36,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libcondor
 
+# Camera
+PRODUCT_COPY_FILES += \
+     $(LOCAL_PATH)/lib/libadsp_denoise_skel.so:system/vendor/lib/rfsa/adsp/libadsp_denoise_skel.so \
+	 $(LOCAL_PATH)/lib/libadsp_jpege_skel.so:system/vendor/lib/rfsa/adsp/libadsp_jpege_skel.so
+	
 # Stlport
 PRODUCT_PACKAGES += \
     libstlport
