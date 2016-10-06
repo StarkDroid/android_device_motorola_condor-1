@@ -41,5 +41,5 @@ TARGET_OTA_ASSERT_DEVICE := xt1021,xt1022,xt1023,condor_umts,condor_umtsds,condo
 TARGET_INIT_VENDOR_LIB := libinit_condor
 TARGET_RECOVERY_DEVICE_MODULES := libinit_condor
 
-BOARD_SEPOLICY_DIRS += \
+# BOARD_SEPOLICY_DIRS += \
     device/motorola/condor/sepolicy
